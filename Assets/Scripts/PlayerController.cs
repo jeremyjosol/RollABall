@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    private Rigidbody rb; 
     // Start is called before the first frame update
     void Start()
     {
@@ -13,7 +14,7 @@ public class PlayerController : MonoBehaviour
 
     void OnMove (InputValue movementValue)
     {
-   
+        Vector2 movementVector = movementValue.Get<Vector2>(); 
     }
 
     // Update is called once per frame
