@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("PickUp")) 
        {
             other.gameObject.SetActive(false);
-            count = count++; 
+            count++; 
             SetCountText();
        }
     }
@@ -45,6 +45,6 @@ public class PlayerController : MonoBehaviour
 
     void SetCountText() 
     {
-       countText.text =  "Count: " + count.ToString();
+       countText.text =  "Score: " + count.ToString();
     }
 }
