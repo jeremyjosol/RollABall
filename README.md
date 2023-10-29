@@ -30,6 +30,10 @@ The creation of this game is based on understanding the basics of Unity; how to 
 <img src="GitAssets/Gameplay.jpg">
 </html>
 
+<html>
+<img src="GitAssets/Score.jpg">
+</html>
+
 > Current game state as of _10/28/2023_
 
 ### Gameplay
@@ -45,8 +49,6 @@ The creation of this game is based on understanding the basics of Unity; how to 
 **PickUp Rotation**: PickUp GameObjects rotate smoothly.
 
 ### Work in Progress
-
-* UI Score
 
 * Custom play area (maze-like)
 
