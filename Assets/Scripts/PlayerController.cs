@@ -7,6 +7,8 @@ using TMPro;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 0; 
+    public AudioSource pickupSound;
+    // public AudioClip sfx;
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
     private Rigidbody rb; 
@@ -35,6 +37,8 @@ public class PlayerController : MonoBehaviour
             other.gameObject.SetActive(false);
             count++; 
             SetCountText();
+            // pickupSound.clip = sfx;
+            pickupSound.Play();
         }
     }
 
@@ -49,7 +53,7 @@ public class PlayerController : MonoBehaviour
     {
         countText.text =  "Score: " + count.ToString();
         
-        if (count >= 12)
+        if (count >= 75)
         {
            winTextObject.SetActive(true);
         }
